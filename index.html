@@ -30,6 +30,42 @@
         </div>
       </div>
     </section>
+    <section class="form">
+      <div class="form__container">
+        <form class="login__form">
+          <h2>Вход в систему</h2>
+          <div class="form__group">
+            <input
+              placeholder="Email/Телефон"
+              type="text"
+              id="text"
+              name="text"
+            />
+            <input
+              placeholder="Пароль"
+              type="password"
+              id="password"
+              name="password"
+            />
+          </div>
+          <div class="form__group checkbox__group">
+            <input type="checkbox" id="remember" name="remember" />
+            <label for="remember">Запомнить пароль</label>
+          </div>
+          <div class="form__group">
+            <a href="#" class="forgot__password">Восстановить</a>
+          </div>
+          <div class="form__group button__group">
+            <button type="submit" class="btn">Войти</button>
+            <button type="button" class="btn">Зарегистрироваться</button>
+          </div>
+          <div class="close__modal-container">
+            <div class="close__modal-btn"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <script src="/js/index.js"></script>
   </body>
 </html>
