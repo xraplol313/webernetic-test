@@ -30,23 +30,13 @@
         </div>
       </div>
     </section>
-    <section class="form">
+    <section class="form__section">
       <div class="form__container">
-        <form class="login__form">
+        <form class="form">
           <h2>Вход в систему</h2>
           <div class="form__group">
-            <input
-              placeholder="Email/Телефон"
-              type="text"
-              id="text"
-              name="text"
-            />
-            <input
-              placeholder="Пароль"
-              type="password"
-              id="password"
-              name="password"
-            />
+            <input placeholder="Email/Телефон" type="text" name="text" />
+            <input placeholder="Пароль" type="password" name="password" />
           </div>
           <div class="form__group checkbox__group">
             <input type="checkbox" id="remember" name="remember" />
@@ -56,15 +46,18 @@
             <a href="#" class="forgot__password">Восстановить</a>
           </div>
           <div class="form__group button__group">
-            <button type="submit" class="btn">Войти</button>
-            <button type="button" class="btn">Зарегистрироваться</button>
+            <button type="submit" class="form__group-btn">Войти</button>
+            <button type="button" class="form__group-btn">
+              Зарегистрироваться
+            </button>
           </div>
-          <div class="close__modal-container">
-            <div class="close__modal-btn"></div>
+          <div class="form__close-modal">
+            <div class="form__modal-btn"></div>
           </div>
         </form>
       </div>
     </section>
+    <div class="overlay"></div>
 
     <script src="/js/index.js"></script>
   </body>

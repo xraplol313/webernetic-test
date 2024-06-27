@@ -54,4 +54,7 @@
     background-size: contain;
     background-position: bottom;
   }
+  .form__section {
+    width: 350px;
+  }
 }

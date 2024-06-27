@@ -2,6 +2,7 @@ body {
   font-family: "Manrope", sans-serif;
   background-color: rgb(245, 245, 245);
 }
+
 .container {
   margin: 0 auto;
   max-width: 1920px;
@@ -86,9 +87,29 @@ body {
   margin-top: 4px;
 }
 
-.form {
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+}
+
+.form__section {
   width: 500px;
   background: rgba(235, 240, 250, 1);
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .form__container {
@@ -99,13 +120,13 @@ body {
   position: relative;
 }
 
-.login__form {
+.modal {
   display: flex;
   flex-direction: column;
   margin: 80px 24px 24px 24px;
 }
 
-.login__form h2 {
+.modal h2 {
   text-align: left;
   font-size: 24px;
   font-weight: 500;
@@ -117,6 +138,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .form__group input {
   height: 73px;
   padding-left: 24px;
@@ -124,6 +146,7 @@ body {
   border: none;
   background: rgba(215, 226, 246, 1);
 }
+
 .form__group input:last-child {
   margin-top: 4px;
 }
@@ -167,7 +190,7 @@ body {
   gap: 10px;
 }
 
-.btn {
+.form__group-btn {
   padding: 10px 20px;
   color: rgba(36, 76, 152, 1);
   background-color: inherit;
@@ -178,17 +201,18 @@ body {
   border: 2px solid;
 }
 
-.btn:hover {
+.form__group-btn:hover {
   background: rgba(36, 76, 152, 1);
   color: rgb(255, 255, 255);
 }
 
-.close__modal-container {
+.form__close-modal {
   position: absolute;
   top: 24px;
-  right: 44px;
+  right: 24px;
 }
-.close__modal-btn {
+
+.form__modal-btn {
   width: 52px;
   height: 52px;
   border-radius: 10px;
@@ -197,7 +221,8 @@ body {
   cursor: pointer;
   background-color: white;
 }
-.close__modal-btn:before {
+
+.form__modal-btn:before {
   content: "+";
   color: rgb(0, 0, 0);
   position: absolute;
@@ -209,7 +234,8 @@ body {
   left: 12px;
   transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
 }
-.close__modal-btn:after {
+
+.form__modal-btn:after {
   content: "";
   position: absolute;
   top: 0;
@@ -221,4 +247,14 @@ body {
   z-index: 1;
   transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
   transform: scale(0.01);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
 }
