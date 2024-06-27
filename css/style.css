@@ -1,0 +1,87 @@
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: rgb(245, 245, 245);
+}
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+
+.main__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(235, 240, 250, 1);
+  margin: 36px 40px;
+  border-radius: 10px;
+  height: 455px;
+}
+
+.main__descr {
+  max-width: 538px;
+  margin-left: 36px;
+}
+
+.main__descr-title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 48px;
+  color: rgba(31, 66, 132, 1);
+}
+
+.main__descr-text {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(114, 114, 114, 1);
+}
+
+.main__descr-button {
+  width: 341px;
+  height: 68px;
+  position: relative;
+  border-radius: 60px;
+  background: rgba(36, 76, 152, 1);
+  color: rgb(255, 255, 255);
+  margin-top: 15px;
+  padding-left: 32px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  border: none;
+  cursor: pointer;
+}
+
+.main__descr-button::after {
+  position: absolute;
+  right: 12px;
+  top: 15px;
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url("/img/arrow-btn.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__img {
+  background-image: url("/img/main-img.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+
+  width: 910px;
+  height: 456px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.main__img img {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 4px;
+}
